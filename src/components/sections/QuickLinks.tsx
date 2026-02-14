@@ -27,7 +27,7 @@ export function QuickLinks({ services }: { services: Service[] }) {
     ]
 
     return (
-        <section className="container py-24 px-4 md:px-6">
+        <section className="container mx-auto py-24 px-4 md:px-6">
             <div className="flex flex-col items-center justify-center gap-4 text-center mb-16">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Court Divisions & Services</h2>
                 <p className="max-w-[700px] text-muted-foreground md:text-lg">
@@ -40,7 +40,7 @@ export function QuickLinks({ services }: { services: Service[] }) {
                     const Icon = IconMap[service.icon.toLowerCase()] || IconMap.default
 
                     return (
-                        <Card key={service.id} className="group relative overflow-hidden transition-all hover:shadow-lg border-border/50 bg-card/50 backdrop-blur-sm">
+                        <Card key={service.id} className="group relative overflow-hidden transition-all hover:shadow-lg border-border/50 bg-card/50 backdrop-blur-sm w-full md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] max-w-sm">
                             <CardHeader>
                                 <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                                     <Icon className="h-6 w-6" />
