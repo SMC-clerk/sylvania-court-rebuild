@@ -40,7 +40,7 @@ export function QuickLinks({ services }: { services: Service[] }) {
                     const Icon = IconMap[service.icon.toLowerCase()] || IconMap.default
 
                     return (
-                        <Card key={service.id} className="group relative overflow-hidden transition-all hover:shadow-lg border-border/50 bg-card/50 backdrop-blur-sm w-full md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] max-w-sm">
+                        <Card key={service.id} className="w-full max-w-[350px] border shadow-sm hover:shadow-md transition-shadow">
                             <CardHeader>
                                 <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                                     <Icon className="h-6 w-6" />
